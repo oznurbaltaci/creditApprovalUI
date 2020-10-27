@@ -1,0 +1,13 @@
+.center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+.mat-card{
+  margin-top: 3px;
+  height: 85%;
+  background-color: #F0F0F0;
+}
+

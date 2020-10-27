@@ -1,0 +1,10 @@
+.mat-toolbar{
+    background-color: #F0F0F0;
+    height: 10%;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,.2);
+}
+
+.mat-toolbar-row{
+    background-color: #F0F0F0;
+    margin: auto;
+}

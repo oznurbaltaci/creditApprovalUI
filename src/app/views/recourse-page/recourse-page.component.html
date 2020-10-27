@@ -1,0 +1,58 @@
+<mat-card>
+
+  <mat-card-header class="center">
+    <h1>Koçfinans Kredi Başvurusu</h1>
+  </mat-card-header>
+
+
+  <mat-card-content class="center">
+
+    <div [formGroup]="form">
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>İsim</mat-label>
+          <input matInput placeholder="İsim" formControlName="name" >
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Soyisim</mat-label>
+          <input matInput placeholder="Soyisim" formControlName="surname" >
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>TC Kimlik No</mat-label>
+          <input type="number" pattern="\d*" maxlength="11" matInput placeholder="TC Kimlik No" formControlName="identityNumber" required>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Telefon No</mat-label>
+          <input type="number" pattern="\d*" maxlength="10" matInput placeholder="5001001010" formControlName="phoneNumber" >
+          <mat-hint>Telefon numaranızı başında 0 olmadan giriniz!</mat-hint>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Aylık Gelir</mat-label>
+          <input matInput type="number" pattern="\d*"  formControlName="monthlyIncome">
+        </mat-form-field>
+      </p>
+
+
+    </div>
+
+
+  </mat-card-content>
+
+
+  <mat-card-actions class="center">
+    <button mat-raised-button color="warn" (click)="recourse()">BAŞVUR</button>
+  </mat-card-actions>
+
+</mat-card>
+
+
+
+
